@@ -1,6 +1,9 @@
 		$(function() {
-			$('#sortable').sortable({
-				placeholder: "ui-state-highlight"
+			$('#sortable1, #sortable2').sortable({
+				placeholder: "ui-state-highlight",
+				connectWith: ".tree"
 			});
-			$( "#sortable" ).disableSelection();
+			$( "#sortable1, #sortable2" ).disableSelection();
+
+			
 		});
